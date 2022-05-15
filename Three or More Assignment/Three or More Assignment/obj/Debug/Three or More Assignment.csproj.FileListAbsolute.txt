@@ -1,0 +1,8 @@
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\bin\Debug\Three or More Assignment.exe.config
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\bin\Debug\Three or More Assignment.exe
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\bin\Debug\Three or More Assignment.pdb
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\obj\Debug\Three or More Assignment.csproj.AssemblyReference.cache
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\obj\Debug\Three or More Assignment.csproj.SuggestedBindingRedirects.cache
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\obj\Debug\Three or More Assignment.csproj.CoreCompileInputs.cache
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\obj\Debug\Three or More Assignment.exe
+C:\Users\james\source\repos\Three-or-More-Assignment-\Three or More Assignment\Three or More Assignment\obj\Debug\Three or More Assignment.pdb

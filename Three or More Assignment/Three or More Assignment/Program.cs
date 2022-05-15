@@ -10,7 +10,7 @@ namespace Three_or_More_Assignment
     {
         static void Main(string[] args)
         {
-
+            Game.Run();
         }
     }
 }
