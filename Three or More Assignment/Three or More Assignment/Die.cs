@@ -16,8 +16,27 @@ namespace Three_or_More_Assignment
             //Then call the RNG for the amount of elements there are in the list 
             Input.IRoll();
             RolledDie = Die.RNG(PlayersDie, NumDie);
-            foreach(int i in RolledDie) { Console.WriteLine(i); };
+            Console.WriteLine("You Rolled: "+ String.Join(",", RolledDie));
             return RolledDie;
+        }
+        public static int[] Reroll(int[] PlayersDie, int[] MatchingDie)
+        {
+            for(int i = 0; i < PlayersDie.Length; i++)
+            {
+                if (PlayersDie[i] < MatchingDie[1])
+                {
+                    PlayersDie[i] = 0;
+                }
+                else if (PlayersDie[i] > MatchingDie[1])
+                {
+                    PlayersDie[i] = 0;
+                }
+            }
+            Array.Sort(PlayersDie);
+            Input.IRoll();
+            PlayersDie = Die.RNG(PlayersDie, 3);
+            Console.WriteLine("PlayersDie: " + String.Join(",", PlayersDie));
+            return PlayersDie;
         }
         public static int[] RNG(int[] PlayersDie, int NumDie)
         {

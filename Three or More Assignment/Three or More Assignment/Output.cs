@@ -24,24 +24,31 @@ namespace Three_or_More_Assignment
         {
             Counter++;
             Console.WriteLine("Player "+ Counter +" has now completed their turn.");
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
             return Counter; 
         }
         public static bool EndRound(int[] PlayersScores, int NumPoints)
         {
-            bool RoundOver = Game.CheckScore(PlayersScores, NumPoints);
-            if (RoundOver == false)
+            bool GameOver = Game.CheckScore(PlayersScores, NumPoints);
+            if (GameOver == false)
             {
                 Console.WriteLine("All players have now completed their turns in this round.");
                 Console.WriteLine("Here are the current totals for all the players: ");
                 //loop to print all the players scores
                 int Counter = 1;
-                foreach(int i in PlayersScores)
+                foreach (int i in PlayersScores)
                 {
                     Console.WriteLine("Player " + Counter + ":" + i);
                     Counter++;
                 }
+
             }
-            return RoundOver;
+            else if (GameOver == true)
+            {
+                Console.WriteLine("The game should be over as a player has reached the total score");
+                return true;
+            }
+            return GameOver;
         }
         public static void EndGame(int[] PlayersScores, int NumPlayers)
         {
