@@ -22,11 +22,12 @@ namespace Three_or_More_Assignment
                 int Counter = 0;
                 while (Counter < NumPlayers)
                 {
+                    Console.WriteLine("It is now Player " + (Counter+1) + "s turn.");
                     //Roll the Players Die
                     PlayersDie = Die.Roll(PlayersDie, 5);
                     //Check to see how many of the die match and then add the scores for what they rolled
-                    MatchingDie = Game.CheckDie(PlayersDie);
-                    PlayersScores[Counter] = Game.AddScore(PlayersScores[Counter], MatchingDie, PlayersDie);
+                    MatchingDie = CheckDie(PlayersDie);
+                    PlayersScores[Counter] = AddScore(PlayersScores[Counter], MatchingDie, PlayersDie);
                     Counter = Output.NextPlayer(Counter);
 
                 }
@@ -79,7 +80,7 @@ namespace Three_or_More_Assignment
                     //reroll
                     check = false;
                     PlayersDie = Die.Reroll(PlayersDie, MatchingDie);
-                    MatchingDie = Game.CheckDie(PlayersDie);
+                    MatchingDie = CheckDie(PlayersDie);
                     if(MatchingDie[0] == 2)
                     {
                         return PlayersScores;

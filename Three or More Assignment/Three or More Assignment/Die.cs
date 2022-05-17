@@ -15,7 +15,7 @@ namespace Three_or_More_Assignment
             int[] RolledDie = new int[5];
             //Then call the RNG for the amount of elements there are in the list 
             Input.IRoll();
-            RolledDie = Die.RNG(PlayersDie, NumDie);
+            RolledDie = RNG(PlayersDie, NumDie);
             Console.WriteLine("You Rolled: "+ String.Join(",", RolledDie));
             return RolledDie;
         }
@@ -34,7 +34,7 @@ namespace Three_or_More_Assignment
             }
             Array.Sort(PlayersDie);
             Input.IRoll();
-            PlayersDie = Die.RNG(PlayersDie, 3);
+            PlayersDie = RNG(PlayersDie, 3);
             Console.WriteLine("PlayersDie: " + String.Join(",", PlayersDie));
             return PlayersDie;
         }

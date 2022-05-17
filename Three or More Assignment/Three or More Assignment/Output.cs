@@ -52,7 +52,7 @@ namespace Three_or_More_Assignment
         }
         public static void EndGame(int[] PlayersScores, int NumPlayers)
         {
-
+            //Extra information about which player won and all the players total scores
         }
     }
 }
